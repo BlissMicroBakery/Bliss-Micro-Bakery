@@ -62,8 +62,29 @@ select {
 h1,
 h2,
 h3,
-.brand {
-    font-family: "Cormorant Garamond", serif;
+.brand{
+    display:flex;
+    flex-direction:column;
+    line-height:1;
+    text-decoration:none;
+}
+
+.brand-bliss{
+    font-family:"WindSong", cursive;
+    font-size:3rem;
+    font-weight:500;
+    color:#6F8FAF;   /* dusty blue */
+    line-height:.8;
+}
+
+.brand-subtitle{
+    margin-top:-4px;
+    font-family:"Outfit", sans-serif;
+    font-size:.68rem;
+    letter-spacing:.35em;
+    font-weight:600;
+    text-transform:uppercase;
+    color:#4d4d4d;
 }
 
 h1 {
@@ -600,9 +621,13 @@ h3 {
         padding: 0 5%;
     }
 
-    .brand {
-        font-size: 1.45rem;
-    }
+    .brand-bliss{
+    font-size:2.3rem;
+}
+
+.brand-subtitle{
+    font-size:.58rem;
+}
 
     .hero {
         min-height: 650px;
