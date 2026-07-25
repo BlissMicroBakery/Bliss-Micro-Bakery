@@ -1,271 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-  <meta
-    name="description"
-    content="Bliss Microbakery creates thoughtfully made cakes, cookies, pastries, and seasonal treats for local farmers markets and private orders."
-  >
+    <meta
+        name="description"
+        content="Bliss Micro Bakery offers small-batch breads, pastries, cookies, and seasonal baked goods."
+    >
 
-  <title>Bliss Microbakery</title>
+    <title>Bliss Micro Bakery</title>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=WindSong:wght@400;500&display=swap"
-    rel="stylesheet"
-  >
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
 
-  <link rel="stylesheet" href="css/style.css">
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <!-- Sticky Navigation -->
-  <header class="site-header">
-    <nav class="main-nav" aria-label="Main navigation">
-      <a class="nav-link active" href="index.html">Home</a>
-      <a class="nav-link" href="products.html">Menu</a>
-      <a class="nav-link" href="order.html">Order</a>
-      <a class="nav-link" href="gallery.html">Gallery</a>
-      <a class="nav-link" href="markets.html">Markets</a>
-      <a class="nav-link" href="contact.html">Contact</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+
+            <a href="index.html" class="brand">
+                Bliss Micro Bakery
+            </a>
+
+            <button
+                class="menu-button"
+                id="menu-button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+
+                <li>
+                    <a href="products.html">Menu</a>
+                </li>
+
+                <li>
+                    <a href="order.html">Order</a>
+                </li>
+
+                <li>
+                    <a href="markets.html">Markets</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+
+        </div>
     </nav>
-  </header>
 
-  <main>
 
-    <!-- Intro / Logo Area -->
-    <section class="intro-section">
-      <div class="intro-content">
+    <main>
 
-        <div class="brand-lockup">
-          <h1 class="brand-name">Bliss</h1>
-          <p class="brand-subtitle">Microbakery</p>
-        </div>
+        <!-- Hero Section -->
+        <section class="hero">
 
-        <p class="tagline">
-          Small Batch. Thoughtfully Made.
-        </p>
+            <div class="hero-overlay"></div>
 
-        <div class="hero-buttons">
-          <a class="scallop-button primary-button" href="products.html">
-            View Menu
-          </a>
+            <div class="hero-content">
+                <p class="eyebrow">
+                    Small-batch. Thoughtfully made.
+                </p>
 
-          <a class="scallop-button secondary-button" href="order.html">
-            Place an Order
-          </a>
-        </div>
+                <h1>
+                    Simple ingredients.<br>
+                    Beautifully baked.
+                </h1>
 
-      </div>
-    </section>
+                <p class="hero-description">
+                    Fresh breads, pastries, cookies, and seasonal treats
+                    handmade in small batches.
+                </p>
 
-    <!-- Hero Photograph -->
-    <section class="hero-photo-section">
-      <div class="page-width">
-        <img
-          class="hero-photo"
-          src="images/hero-bakery.jpg"
-          alt="An assortment of freshly baked cakes, cookies, and pastries from Bliss Microbakery"
-        >
-      </div>
-    </section>
+                <div class="hero-buttons">
+                    <a href="products.html" class="button button-primary">
+                        View the Menu
+                    </a>
 
-    <!-- Featured Treats -->
-    <section class="featured-section">
-      <div class="page-width">
-
-        <div class="section-heading">
-          <p class="eyebrow">Fresh from the kitchen</p>
-          <h2>Featured Treats</h2>
-
-          <span class="heading-line" aria-hidden="true"></span>
-
-          <p class="section-intro">
-            A rotating collection of market favorites, seasonal specialties,
-            and thoughtfully decorated treats.
-          </p>
-        </div>
-
-        <div class="treat-grid">
-
-          <article class="treat-card">
-            <div class="arched-image">
-              <img
-                src="images/featured-cookies.jpg"
-                alt="Freshly baked decorated cookies"
-              >
+                    <a href="order.html" class="button button-secondary">
+                        Place an Order
+                    </a>
+                </div>
             </div>
 
-            <div class="treat-card-content">
-              <h3>Cookies</h3>
-              <p>
-                Classic favorites, seasonal flavors, and beautifully finished
-                designs.
-              </p>
-            </div>
-          </article>
+        </section>
 
-          <article class="treat-card">
-            <div class="arched-image">
-              <img
-                src="images/featured-cakes.jpg"
-                alt="A beautifully decorated celebration cake"
-              >
+
+        <!-- Introduction -->
+        <section class="intro section">
+            <div class="intro-content">
+
+                <p class="section-label">
+                    Welcome to Bliss
+                </p>
+
+                <h2>
+                    A neighborhood bakery with a little extra joy.
+                </h2>
+
+                <p>
+                    Bliss Micro Bakery creates fresh, small-batch baked
+                    goods for local markets, special occasions, and
+                    everyday treats.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- Featured Products -->
+        <section class="featured section">
+            <div class="section-heading">
+
+                <div>
+                    <p class="section-label">
+                        Fresh from the oven
+                    </p>
+
+                    <h2>Featured favorites</h2>
+                </div>
+
+                <a href="products.html" class="text-link">
+                    View full menu →
+                </a>
+
             </div>
 
-            <div class="treat-card-content">
-              <h3>Cakes</h3>
-              <p>
-                Carefully crafted cakes for celebrations, gatherings, and
-                sweet everyday moments.
-              </p>
-            </div>
-          </article>
 
-          <article class="treat-card">
-            <div class="arched-image">
-              <img
-                src="images/featured-seasonal.jpg"
-                alt="A seasonal assortment of baked treats"
-              >
+            <div class="product-grid">
+
+                <article class="product-card">
+                    <img
+                        src="images/bread.jpg"
+                        alt="Fresh artisan bread"
+                    >
+
+                    <div class="product-card-content">
+                        <h3>Artisan Bread</h3>
+
+                        <p>
+                            Hand-shaped loaves with a crisp crust and
+                            soft, flavorful center.
+                        </p>
+
+                        <a href="products.html" class="text-link">
+                            Learn more →
+                        </a>
+                    </div>
+                </article>
+
+
+                <article class="product-card">
+                    <img
+                        src="images/cookies.jpg"
+                        alt="Fresh baked cookies"
+                    >
+
+                    <div class="product-card-content">
+                        <h3>Signature Cookies</h3>
+
+                        <p>
+                            Rich, soft-centered cookies made in rotating
+                            seasonal flavors.
+                        </p>
+
+                        <a href="products.html" class="text-link">
+                            Learn more →
+                        </a>
+                    </div>
+                </article>
+
+
+                <article class="product-card">
+                    <img
+                        src="images/pastries.jpg"
+                        alt="Fresh pastries"
+                    >
+
+                    <div class="product-card-content">
+                        <h3>Seasonal Pastries</h3>
+
+                        <p>
+                            Small-batch pastries inspired by the flavors
+                            of each season.
+                        </p>
+
+                        <a href="products.html" class="text-link">
+                            Learn more →
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- Market Section -->
+        <section class="markets-preview">
+            <div class="markets-preview-content">
+
+                <div>
+                    <p class="section-label light-label">
+                        Find us locally
+                    </p>
+
+                    <h2>Visit Bliss at the market.</h2>
+
+                    <p>
+                        Browse upcoming market dates, pickup locations,
+                        and special events.
+                    </p>
+                </div>
+
+                <a href="markets.html" class="button button-light">
+                    View Market Schedule
+                </a>
+
+            </div>
+        </section>
+
+
+        <!-- About Section -->
+        <section class="about section">
+
+            <div class="about-image">
+                <img
+                    src="images/baker.jpg"
+                    alt="The baker behind Bliss Micro Bakery"
+                >
             </div>
 
-            <div class="treat-card-content">
-              <h3>Seasonal Treats</h3>
-              <p>
-                Limited bakes inspired by the flavors, colors, and occasions of
-                the season.
-              </p>
+            <div class="about-content">
+                <p class="section-label">
+                    Behind the bakery
+                </p>
+
+                <h2>Made with care, one batch at a time.</h2>
+
+                <p>
+                    Bliss Micro Bakery began with a love of baking and
+                    the belief that simple, thoughtfully made food can
+                    make an ordinary day feel special.
+                </p>
+
+                <p>
+                    Every item is prepared in small batches with attention
+                    to flavor, quality, and presentation.
+                </p>
+
+                <a href="contact.html" class="text-link">
+                    Get in touch →
+                </a>
             </div>
-          </article>
+
+        </section>
+
+
+        <!-- Call to Action -->
+        <section class="order-callout section">
+
+            <div>
+                <p class="section-label">
+                    Ready for something delicious?
+                </p>
+
+                <h2>Place your next order with Bliss.</h2>
+            </div>
+
+            <a href="order.html" class="button button-primary">
+                Start an Order
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-grid">
+
+            <div>
+                <h2>Bliss Micro Bakery</h2>
+
+                <p>
+                    Small-batch baked goods made with care.
+                </p>
+            </div>
+
+
+            <div>
+                <h3>Explore</h3>
+
+                <ul>
+                    <li><a href="products.html">Menu</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="markets.html">Markets</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+
+            <div>
+                <h3>Follow</h3>
+
+                <ul>
+                    <li>
+                        <a href="#" target="_blank" rel="noopener">
+                            Instagram
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" target="_blank" rel="noopener">
+                            Facebook
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
         </div>
 
-        <div class="centered-link">
-          <a class="text-link" href="products.html">
-            Explore the full menu
-            <span aria-hidden="true">→</span>
-          </a>
-        </div>
 
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about-section">
-      <div class="page-width about-grid">
-
-        <div class="about-photo-wrap">
-          <img
-            class="about-photo"
-            src="images/about-bliss.jpg"
-            alt="Baked goods being prepared at Bliss Microbakery"
-          >
-        </div>
-
-        <div class="about-content">
-          <p class="eyebrow">Made with care</p>
-          <h2>A Little About Bliss</h2>
-
-          <span class="heading-line left-line" aria-hidden="true"></span>
-
-          <p>
-            Bliss Microbakery creates small-batch cakes, cookies, pastries,
-            and seasonal treats with a focus on beautiful presentation and
-            welcoming flavors.
-          </p>
-
-          <p>
-            You can find us at local farmers and artisan markets, or contact us
-            about a private order for your next gathering or celebration.
-          </p>
-
-          <a class="rounded-button" href="contact.html">
-            Learn More About Bliss
-          </a>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Markets -->
-    <section class="markets-section">
-      <div class="page-width">
-
-        <div class="markets-panel">
-          <div>
-            <p class="eyebrow">Come say hello</p>
-            <h2>Find Us at the Market</h2>
-
+        <div class="footer-bottom">
             <p>
-              See where Bliss will be popping up next and discover what treats
-              are coming to the table.
+                © <span id="current-year"></span>
+                Bliss Micro Bakery. All rights reserved.
             </p>
-          </div>
-
-          <a class="scallop-button primary-button" href="markets.html">
-            Upcoming Markets
-          </a>
         </div>
 
-      </div>
-    </section>
+    </footer>
 
-    <!-- Final Call to Action -->
-    <section class="order-callout">
-      <div class="page-width order-callout-inner">
-        <p class="eyebrow">Something special in mind?</p>
-        <h2>Let's Make Something Lovely</h2>
 
-        <p>
-          Tell us what you are celebrating, what flavors you love, and what
-          kind of treat you have in mind.
-        </p>
-
-        <a class="scallop-button primary-button" href="order.html">
-          Start an Order
-        </a>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="page-width footer-grid">
-
-      <div class="footer-brand">
-        <p class="footer-logo">Bliss</p>
-        <p class="footer-subtitle">Microbakery</p>
-      </div>
-
-      <div class="footer-links">
-        <a href="products.html">Menu</a>
-        <a href="markets.html">Markets</a>
-        <a href="order.html">Order</a>
-        <a href="contact.html">Contact</a>
-      </div>
-
-      <p class="copyright">
-        &copy; <span id="current-year"></span> Bliss Microbakery
-      </p>
-
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById("current-year").textContent =
-      new Date().getFullYear();
-  </script>
+    <script src="js/script.js"></script>
 
 </body>
 </html>
