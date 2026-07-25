@@ -51,7 +51,7 @@ select {
 
 .section-label,
 .eyebrow {
-    color: #a37850;
+    color: #6F8FAF;
     font-size: 0.75rem;
     font-weight: 600;
     letter-spacing: 0.18em;
@@ -73,7 +73,7 @@ h3,
     font-family:"WindSong", cursive;
     font-size:3rem;
     font-weight:500;
-    color:#6F8FAF;   /* dusty blue */
+    color:#fcfbf8;  
     line-height:.8;
 }
 
@@ -126,31 +126,31 @@ h3 {
 }
 
 .button-primary {
-    background-color: #86613f;
-    border-color: #86613f;
-    color: #ffffff;
+   background-color: #11A3C0;
+    border-color: #11A3C0;
+    color: #fcfbf8;
 }
 
 .button-primary:hover {
-    background-color: #6f4e32;
-    border-color: #6f4e32;
+    background-color: #6F8FAF;
+    border-color: #6F8FAF;
 }
 
 .button-secondary {
-    background-color: transparent;
-    border-color: rgba(255, 255, 255, 0.8);
-    color: #ffffff;
+    background-color: #11A3C0;
+    border-color: #11A3C0;
+    color: #fcfbf8;
 }
 
 .button-secondary:hover {
-    background-color: #ffffff;
-    color: #2f2b27;
+   background-color: #6F8FAF;
+    border-color: #6F8FAF;
 }
 
 .button-light {
     background-color: #fcfbf8;
     border-color: #fcfbf8;
-    color: #4c3a2a;
+    color: #11A3C0;
 }
 
 .button-light:hover {
@@ -159,8 +159,8 @@ h3 {
 }
 
 .text-link {
-    border-bottom: 1px solid #a37850;
-    color: #86613f;
+    border-bottom: 1px solid #11A3C0;
+    color: #11A3C0;
     display: inline-block;
     font-size: 0.9rem;
     font-weight: 600;
@@ -171,8 +171,8 @@ h3 {
 }
 
 .text-link:hover {
-    border-color: #4c3a2a;
-    color: #4c3a2a;
+    border-color: #6F8FAF;
+    color: #6F8FAF;
 }
 
 
@@ -181,12 +181,31 @@ h3 {
 ------------------------------ */
 
 .navbar {
-    background-color: rgba(252, 251, 248, 0.97);
-    border-bottom: 1px solid #e5ddd3;
+    background-color: #11A3C0;
+    /*border-bottom: 1px solid #11A3C0;*/
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 1000;
+}
+
+.navbar::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    width: 100%;
+    height: 20px;
+
+    background:
+        radial-gradient(
+            circle at 15px 0,
+            #11A3C0 15px,
+            transparent 16px
+        );
+
+    background-size: 30px 20px;
+    background-repeat: repeat-x;
 }
 
 .nav-container {
@@ -212,8 +231,8 @@ h3 {
 }
 
 .nav-links a {
-    color: #4c4640;
-    font-size: 0.85rem;
+    color: #fcfbf8;
+    font-size: 1rem;
     font-weight: 500;
     letter-spacing: 0.04em;
     padding: 8px 0;
@@ -221,7 +240,7 @@ h3 {
 }
 
 .nav-links a::after {
-    background-color: #a37850;
+    background-color: #fcfbf8;
     bottom: 0;
     content: "";
     height: 1px;
@@ -242,7 +261,7 @@ h3 {
 .menu-button {
     background: none;
     border: none;
-    color: #2f2b27;
+    color: #11A3C0;
     cursor: pointer;
     display: none;
     font-size: 1.6rem;
@@ -269,8 +288,8 @@ h3 {
         linear-gradient(
             90deg,
             rgba(30, 24, 19, 0.72) 0%,
-            rgba(30, 24, 19, 0.42) 50%,
-            rgba(30, 24, 19, 0.1) 100%
+            rgba(30, 24, 19, 0.42) 25%,
+            rgba(30, 24, 19, 0.1) 50%
         );
     inset: 0;
     position: absolute;
@@ -350,7 +369,15 @@ h3 {
 .product-card {
     background-color: #fcfbf8;
     overflow: hidden;
+
+    border-radius: 180px 180px 24px 24px;
+    box-shadow: 0 12px 30px rgba(0,0,0,.08);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
 }
+
 
 .product-card img {
     aspect-ratio: 4 / 3;
@@ -358,8 +385,9 @@ h3 {
     transition: transform 0.5s ease;
 }
 
-.product-card:hover img {
-    transform: scale(1.03);
+.product-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(0,0,0,.12);
 }
 
 .product-card-content {
@@ -381,7 +409,7 @@ h3 {
 ------------------------------ */
 
 .markets-preview {
-    background-color: #745238;
+    background-color: #11A3C0;
     color: #ffffff;
     padding: 85px 7%;
 }
